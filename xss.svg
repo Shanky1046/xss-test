@@ -1,15 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" onclick="alert('Bug Found! XSS vulnerability triggered.')">
-  <!-- Rectangle simulating a button or icon -->
-  <rect width="200" height="200" fill="#FFD700" stroke="black" stroke-width="5"/>
-  <!-- Bug Icon (e.g., a simple bug image drawn with SVG) -->
-  <circle cx="100" cy="60" r="30" fill="black"/>
-  <circle cx="85" cy="55" r="10" fill="white"/>
-  <circle cx="115" cy="55" r="10" fill="white"/>
-  <circle cx="100" cy="80" r="15" fill="black"/>
-  <line x1="85" y1="75" x2="60" y2="50" stroke="black" stroke-width="3"/>
-  <line x1="115" y1="75" x2="140" y2="50" stroke="black" stroke-width="3"/>
-  <line x1="100" y1="95" x2="100" y2="130" stroke="black" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <image width="100" height="100" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InJlZCIvPjwvc3ZnPg==" onload="alert('XSS via SVG Image Load')"/>
 </svg>
